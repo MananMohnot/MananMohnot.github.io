@@ -489,7 +489,7 @@ img {
 #contact a {
   margin: 0;
   color: #f4f4f4;
-  height: calc(100vh - 172px);
+  height: 100%;
 }
 
 #contact h2,
