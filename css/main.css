@@ -632,6 +632,61 @@ img {
     background: url("../img/showcase.jpg") no-repeat center right/cover;
   }
 }
+/* Skill pills */
+.skill-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  max-width: 700px;
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.skill-category h4 {
+  color: #333;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skill-category h4 i {
+  color: #ffbc00;
+  margin-right: 0.4rem;
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  background: #333;
+  color: #fff;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.pill small {
+  opacity: 0.75;
+  font-size: 0.75rem;
+}
+
+.skill-footnote {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: #888;
+  font-style: italic;
+}
+
+.pill-gold {
+  background: #ffbc00;
+  color: #333;
+  font-weight: 500;
+}
+
 /* Scroll reveal animations */
 .js-ready .reveal {
   opacity: 0;
