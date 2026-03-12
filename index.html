@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap"
       rel="stylesheet"
@@ -10,6 +12,7 @@
     <script
       src="https://kit.fontawesome.com/9576b74b08.js"
       crossorigin="anonymous"
+      defer
     ></script>
     <link rel="stylesheet" href="css/main.css" />
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -19,8 +22,8 @@
   <body class="hidden-overflow">
     <!-- Header nav-bar -->
     <header id="header-home">
-      <video autoplay loop class="video-background" muted plays-inline>
-        <source src="Network - 12716.mp4" type="video/mp4" />
+      <video autoplay loop class="video-background" muted playsinline preload="none" poster="img/showcase.jpg">
+        <source src="Network - compressed.mp4" type="video/mp4" />
       </video>
       <div class="container">
         <nav id="main-nav">
@@ -39,7 +42,7 @@
               class="txt-type"
               data-wait="3000"
               data-words='["Mohnot","a Origamist","a Student","- BushyBrow1811"," an Anime Fan"]'
-            ></span>
+            ><span class="txt"></span></span>
           </h1>
           <p class="lead">
             I specialize in nothing that can be not achieved by hoomans
@@ -50,17 +53,17 @@
     </header>
 
     <!-- Footer -->
-    <!-- <footer id="main-footer">
+    <footer id="main-footer">
       <div class="footer-content container">
-        <p>Copyright &copy; 2020. All Rights Reserved</p>
+        <p>Copyright &copy; 2024. All Rights and Lefts Reserved</p>
         <div class="social">
-          <i class="fab fa-github"></i>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin"></i>
+          <a href="https://github.com/MananMohnot" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/manan.mohnot" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/manan.mohnot/?hl=nl" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://in.linkedin.com/in/manan-mohnot-7353a5197" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="js/typewriter.js"></script>
   </body>

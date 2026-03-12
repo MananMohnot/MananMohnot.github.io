@@ -9,8 +9,8 @@
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
   border: none;
   cursor: pointer;
 }
@@ -96,22 +96,22 @@ input[class^="btn-"]:hover {
 
 .bg-main {
   background: #56a3a6;
-  color: set-text-color(#56a3a6);
+  color: #fff;
 }
 
 .bg-dark {
   background: #1f1f1b;
-  color: set-text-color(#1f1f1b);
+  color: #f4f4f4;
 }
 
 .bg-light {
   background: #ccc;
-  color: set-text-color(#ccc);
+  color: #333;
 }
 
 .bg-medium {
   background: #00b4d8;
-  color: set-text-color(#00b4d8);
+  color: #fff;
 }
 
 .items {
@@ -272,7 +272,7 @@ input[class^="btn-"]:hover {
 
 * {
   margin: 0;
-  padding: 0em;
+  padding: 0;
 }
 
 body {
@@ -617,7 +617,19 @@ img {
     height: 100%;
   }
 }
-.a{
-background:#333;
+@media (max-width: 768px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #about-c .about-logos {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+  }
+  #header-home video.video-background {
+    display: none;
+  }
+  #header-home {
+    background: url("../img/showcase.jpg") no-repeat center right/cover;
+  }
 }
 /*# sourceMappingURL=main.css.map */

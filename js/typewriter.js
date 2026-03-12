@@ -1,6 +1,6 @@
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
-    this.txtElement = txtElement;
+    this.txtElement = txtElement.querySelector('.txt');
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
@@ -25,7 +25,7 @@ class TypeWriter {
     }
 
     // Insert txt into element
-    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+    this.txtElement.textContent = this.txt;
 
     // Initial Type Speed
     let typeSpeed = 300;
@@ -58,8 +58,14 @@ document.addEventListener('DOMContentLoaded', init);
 // Init App
 function init() {
   const txtElement = document.querySelector('.txt-type');
-  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  if (!txtElement) return;
+  let words;
+  try {
+    words = JSON.parse(txtElement.getAttribute('data-words'));
+  } catch (e) {
+    console.error('TypeWriter: invalid data-words JSON', e);
+    return;
+  }
   const wait = txtElement.getAttribute('data-wait');
-  // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
