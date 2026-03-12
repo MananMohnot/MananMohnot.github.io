@@ -632,4 +632,15 @@ img {
     background: url("../img/showcase.jpg") no-repeat center right/cover;
   }
 }
+/* Scroll reveal animations */
+.js-ready .reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.js-ready .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 /*# sourceMappingURL=main.css.map */

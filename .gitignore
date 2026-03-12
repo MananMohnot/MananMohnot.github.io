@@ -9,8 +9,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Video background (large binary, store separately if needed)
-*.mp4
 
 # Photoshop source files
 *.psd
