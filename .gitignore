@@ -12,3 +12,8 @@ Thumbs.db
 
 # Photoshop source files
 *.psd
+
+# Resume source files (keep off public repo)
+Manan_Resume_July_2025/
+*.pdf
+compress_video.py

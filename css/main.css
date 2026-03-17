@@ -687,6 +687,231 @@ img {
   font-weight: 500;
 }
 
+/* ── Professional Profile page ────────────────────────────── */
+/* Standalone profile header (no nav links) */
+#profile-header {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #ffbc00;
+  display: flex;
+  align-items: center;
+}
+
+#profile-hero {
+  background: #fff;
+  padding: 3rem 0 2.5rem;
+  border-bottom: 3px solid #56a3a6;
+}
+
+.profile-hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid #56a3a6;
+  flex-shrink: 0;
+}
+
+.profile-hero-text {
+  flex: 1;
+}
+
+#profile-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #1f1f1b;
+  margin-bottom: 0.4rem;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #56a3a6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+}
+
+.profile-meta {
+  font-size: 0.92rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.profile-meta a {
+  color: #56a3a6;
+}
+
+.profile-meta a:hover {
+  text-decoration: underline;
+}
+
+.profile-btn {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.profile-section {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.profile-summary {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.75;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Timeline */
+.timeline {
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.timeline-left {
+  text-align: right;
+  padding-top: 0.1rem;
+}
+
+.timeline-org {
+  font-weight: 700;
+  color: #1f1f1b;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.timeline-location {
+  font-size: 0.8rem;
+  color: #56a3a6;
+  margin-top: 0.25rem;
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.2rem;
+}
+
+.timeline-role {
+  font-style: italic;
+  color: #56a3a6;
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+}
+
+.timeline-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-bullets li {
+  padding: 0.25rem 0 0.25rem 1.2rem;
+  position: relative;
+  font-size: 0.92rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.timeline-bullets li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: #56a3a6;
+}
+
+/* Profile skills */
+.profile-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+}
+
+.profile-skill-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.profile-skill-label {
+  min-width: 160px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  padding-top: 0.25rem;
+}
+
+.profile-skill-label i {
+  color: #ffbc00;
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .timeline-left {
+    text-align: left;
+    border-left: 3px solid #56a3a6;
+    padding-left: 0.8rem;
+  }
+  .profile-skill-row {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .profile-skill-label {
+    min-width: unset;
+  }
+  .profile-hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-meta {
+    justify-content: center;
+  }
+  #profile-hero h1 {
+    font-size: 1.8rem;
+  }
+}
+
 /* Scroll reveal animations */
 .js-ready .reveal {
   opacity: 0;
